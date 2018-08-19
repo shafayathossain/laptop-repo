@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:elevation="5dp"
+    android:layout_margin="5dp"
+    android:background="#fff">
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guidelineStart"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rankTextView"
+        tools:text="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:layout_width="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/laptopModelTextView"
+        tools:text="Asus "
+        app:layout_constraintLeft_toLeftOf="@id/guidelineStart"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPU : "
+        app:layout_constraintTop_toBottomOf="@id/laptopModelTextView"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineStart"
+        android:id="@+id/cpuLabelTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cpuTextView"
+        tools:text="Intel 7th gen"
+        app:layout_constraintTop_toTopOf="@id/cpuLabelTextView"
+        app:layout_constraintLeft_toRightOf="@id/cpuLabelTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ram : "
+        app:layout_constraintTop_toBottomOf="@id/cpuTextView"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineStart"
+        android:id="@+id/ramLabelTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ramTextView"
+        tools:text="Intel 7th gen"
+        app:layout_constraintTop_toTopOf="@id/ramLabelTextView"
+        app:layout_constraintLeft_toRightOf="@id/cpuLabelTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayLabelTextView"
+        android:text="Display : "
+        app:layout_constraintLeft_toLeftOf="@id/cpuLabelTextView"
+        app:layout_constraintTop_toBottomOf="@id/ramLabelTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayTextView"
+        app:layout_constraintLeft_toRightOf="@id/displayLabelTextView"
+        tools:text="HD"
+        app:layout_constraintTop_toTopOf="@id/displayLabelTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/graphicsLabelTextView"
+        app:layout_constraintLeft_toLeftOf="@id/cpuLabelTextView"
+        app:layout_constraintTop_toBottomOf="@id/displayLabelTextView"
+        android:text="Graphics : " />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/graphicsTextView"
+        tools:text="4gb"
+        app:layout_constraintLeft_toRightOf="@id/graphicsLabelTextView"
+        app:layout_constraintTop_toTopOf="@id/graphicsLabelTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/storageLabelTextView"
+        app:layout_constraintLeft_toLeftOf="@id/cpuLabelTextView"
+        app:layout_constraintTop_toBottomOf="@id/graphicsLabelTextView"
+        android:text="Storage : "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/storageTextView"
+        app:layout_constraintLeft_toRightOf="@id/storageLabelTextView"
+        tools:text="256ssd"
+        app:layout_constraintTop_toTopOf="@id/storageLabelTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/priceLabelTextView"
+        android:text="Price : "
+        app:layout_constraintLeft_toLeftOf="@id/storageLabelTextView"
+        app:layout_constraintTop_toBottomOf="@id/storageLabelTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/priceTextView"
+        app:layout_constraintLeft_toRightOf="@id/priceLabelTextView"
+        app:layout_constraintTop_toTopOf="@id/priceLabelTextView"
+        tools:text="2226"/>
+
+</android.support.constraint.ConstraintLayout>
